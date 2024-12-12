@@ -350,5 +350,26 @@ object-fit: contain;
 }
 .about-content p{
     margin:1rem 0;
-    
+
+}
+
+
+
+/* section brands */
+
+
+.brands-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+}
+.brands-container img{
+    width: 100%;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.brands-container img:hover{
+    filter: grayscale(0);
 }
