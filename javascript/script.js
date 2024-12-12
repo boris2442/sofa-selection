@@ -20,6 +20,24 @@ window.addEventListener("scrool",()=>{
     btnBurger.classList("bx-x")
 })
 
-window.addEventListener("scroll, ("=>{
-    header.classList.toggle("active")
+window.addEventListener("scroll", ()=>{
+    header.classList.toggle("active",window.scrollY>0 )
 })
+
+const scrollActive=()=>{
+    sections.forEach(section=>{
+        let top=window.scrollY;
+        let offset=section.offsetTop-150;
+        let height=section.offsetHeight;
+        let id=section.getAttribute("id");
+        if(top>=offset &&top<offset+height){
+            linkNav.forEach(links=>{
+                links.classList.remove("active")
+                document.querySelector(`.navigation a[href=${id}`).classList.add("active")
+            })
+        }
+    })
+}
+
+window.addEventListener("scroll",scrollActive)
+
