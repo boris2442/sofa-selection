@@ -373,3 +373,21 @@ object-fit: contain;
 .brands-container img:hover{
     filter: grayscale(0);
 }
+
+
+/* newsletter */
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/Sofa-selection/bg.jpg);
+    flex-direction: column;
+}
+.newsletter h2{
+    color:var(--bg);
+    font-size: clamp(20px, 2vw, 30px);
+}
