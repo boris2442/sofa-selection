@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jaro:opsz@6..72&family=Lora:ital,wght@0,400..700;1,400..700&family=Parisienne&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+} 
+:root{
+    --accent:#0c8929;
+    --accent2:#892d0c;
+    --bg:#fff;
+    --text:#333;
+}
+body{
+    background:var(--bg) ;
+    color:var(--text);
+}
+section{
+    padding: 50px 10%;
+}
+img{
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    margin: 1rem 0;
+    transition: 1s ease-in-out;
+    padding: 10px 14px;
+    background: var(--accent);
+    color:var(--bg);
+    border-radius: 7px;
+}
+.btn:hover{
+    background: var(--accent2);
+}
+
+.section-heading{
+    padding-bottom: 3rem;
+}
+.section-heading h2{
+    text-transform: capitalize;
+    position: relative;
+    font-size: clamp(25px, 4vw, 40px);
+}
+.section-heading h2::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: var(--accent);
+    width: 60px;
+}
+.section-heading span{
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    color:rgba(0,0,0, 0.4)
+}
+
+/* partie destinee au header */
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg);
+    padding: 0.5rem 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    z-index: 1000;
+}
+nav.active{ 
+   box-shadow: 0px 5px 5px 0 rgba(0,0,0,0.2 ); 
+}
+.logo{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color:var(--text);
+    text-transform: uppercase;
+}
+.logo span{
+    color:var(--accent);
+}
+.navigation{
+    position: relative;
+    display: flex;
+}
+.navigation a{
+    padding: 10px 15px;
+    font-weight: 500;
+    color:var(--text);  
+}
+.navigation a:hover, .navigation a.active {
+color:var(--accent);
+
+}
+#burger-menu{
+    font-size: 2 rem;
+    display: none;
+    color:var(--accent);
+    cursor: pointer;
+}
+#burger-menu:hover{
+    color:var(--accent2);
+}
+
+
+/* responsive */
+
+@media screen and (max-width:998px) {
+    nav{
+        padding: 2rem -1rem;
+    }
+   #burger-menu{
+    display: block;
+   } 
+   .navigation{
+    flex-direction: column;
+    top: 100%;
+    right: -100%;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    width: 280px;
+    min-height: 100vh;
+    background: var(--bg);
+    position: absolute;
+   }
+   .navigation a{
+    display: block;
+   }
+   .navigation a:hover, .navigation a.active{
+    background-color: var(--accent);
+    color:var(--bg);
+   }
+   .navigation.active{
+    right: 0;
+   }
+}
+
+
+/* partie destinee au home */
+
+.home{
+  width: 100%;
+  min-height: 100vh;  
+  align-items: center;
+  display: flex;
+  background: url('/Sofa-selection/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.home-content h1{
+    font-size: clamp(30px, 5vw, 60px);
+}
+.home-content h1 span{
+    color:var(--accent);
+}
+.home-content p{
+    margin: 1rem 0;
+    font-size: 0.97rem;
+}
+
+/*partie destinee  boutique */ 
+
+/* .section-heading{
+    padding-bottom: 3rem;
+}
+.section-heading h2{
+    text-transform: capitalize;
+    position: relative;
+    font-size: clamp(25px, 4vw, 60px);
+}
+.section-heading h2::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: var(--accent);
+    width: 60px;
+}
+.section-heading span{
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    color:rgba(0,0,0, 0.4)
+} */
+
+
+.shop-container{
+    margin-top: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap:1.7rem;
+    max-width: 960px;
+}
+.box{
+    overflow: hidden;
+    border-radius:2rem 0 2rem 0 ;
+    box-shadow: -2px 5px 5px rgba(0, 0, 0, 0.2) ;
+    padding-bottom: 2rem;
+    cursor: pointer;
+}
+.box-img{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
+.box-img img:hover , .box:hover{
+transform: scale(1.1);
+}
+.box-content{
+    display: flex;
+    justify-content:space-between ;
+    padding: 1rem;
+}
+.stars{
+    color:orange
+}
+.box-content h4{
+    font-size: 1rem;
+}
+.box p{
+    font-size: 1.1rem;
+    color:var(--accent);
+    font-weight: 600;
+}
+.box p span{
+    display: inline-block;
+    position: relative;
+   margin-left: 1rem;
+   margin-right: 1rem;
+    
+
+}
+.box p span::after{
+    content:"";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: red;
+    position: absolute;
+}
+.solde{
+    position: absolute;
+    top: 4rem;
+    transform: translate(-50%,-50%);
+ background-color: orange;
+ color:var(--bg);
+ padding: 0.5rem 2rem;
+    right: -2rem;
+}
+.fa-credit-card{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0px;
+    font-size: 1rem;
+    cursor: pointer;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0 0 0;
+    background: var(--accent);
+    color:var(--bg);
+    transition: 1s ease-in-out;
+}
+.fa-credit-card:hover{
+    background-color:var(--accent2);
+}
+
+
+
+/* partie reservee au news */
+
+
+
+
+.news-container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    gap:1.7rem;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+.news-container .box p{
+    margin-left: 1rem;
+    
+}
+.news-container .box{
+    border-radius: 7px 0 0 0;
+}
+
+
+
+/* sectuon a propos */
+.about-container{
+    display: grid;
+    gap:1.3rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.about-img img{
+width: 80%;
+object-position: center;
+border-radius: 7px;
+object-fit: contain;
+}
+.about-content span{
+    color:var(--accent);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.about-content h2{
+    font-size: 1rem;
+    margin:1rem 0;
+}
+.about-content p{
+    margin:1rem 0;
+    
+}
