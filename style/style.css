@@ -391,3 +391,17 @@ object-fit: contain;
     color:var(--bg);
     font-size: clamp(20px, 2vw, 30px);
 }
+.news-box{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.news-box input{
+    width: 260px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.news-box .btn{
+    border-radius: 0;
+}
