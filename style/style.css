@@ -405,3 +405,23 @@ object-fit: contain;
 .news-box .btn{
     border-radius: 0;
 }
+
+
+/* partie footer */
+
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+    gap: 2rem;
+    padding: 1rem 5rem;
+    background-color: var(--bg);
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box h6{
+    
+}
