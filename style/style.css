@@ -299,6 +299,8 @@ transform: scale(1.1);
 
 
 /* sectuon a propos */
+
+
 .about-container{
     display: grid;
     gap:1.3rem;
@@ -307,9 +309,15 @@ transform: scale(1.1);
 .about-img img{
 width: 80%;
 object-position: center;
+transition: 0.2s ease-in-out;
 border-radius: 7px;
 object-fit: contain;
 }
+
+.about-img img:hover{
+    filter:grayscale(100%);
+}
+
 .about-content span{
     color:var(--accent);
     font-size: 14px;
