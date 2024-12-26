@@ -41,3 +41,10 @@ const scrollActive=()=>{
 
 window.addEventListener("scroll",scrollActive)
 
+const sr=ScrollReveal({
+    duration:1500,
+    origin:"top",
+    distance:"30px",
+    reset:true
+})
+sr.reveal(".about, .footer-section, .newsletter, .brands, .news, .shop, .home")
