@@ -40,7 +40,7 @@ const scrollActive=()=>{
 }
 
 window.addEventListener("scroll",scrollActive)
-
+// ##################partie scroll reveal
 const sr=ScrollReveal({
     duration:1500,
     origin:"top",
