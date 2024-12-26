@@ -54,9 +54,12 @@ sr.reveal(".about, .footer-section, .newsletter, .brands, .news, .shop, .home, .
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
-  
+    autoplay:{
+        disableOnInteraction: false, 
+    },
+  speed:500,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
