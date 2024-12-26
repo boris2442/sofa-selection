@@ -499,3 +499,15 @@ footer{
         width: 180px;
     }
 }
+
+
+/* partie destinée a swiper */
+
+.et-a-decouvrir{
+    width: 100vw;
+    height: 100vh;
+}
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
