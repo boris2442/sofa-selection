@@ -47,4 +47,4 @@ const sr=ScrollReveal({
     distance:"30px",
     reset:true
 })
-sr.reveal(".about, .footer-section, .newsletter, .brands, .news, .shop, .home")
+sr.reveal(".about, .footer-section, .newsletter, .brands, .news, .shop, .home, .copy")
