@@ -120,7 +120,7 @@ color:var(--accent);
 }
 
 
-/* responsive */
+
 
 
 
@@ -134,8 +134,8 @@ color:var(--accent);
   background: url('/Sofa-selection/background.jpg');
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .home-content h1{
     font-size: clamp(30px, 5vw, 60px);
