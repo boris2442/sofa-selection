@@ -33,7 +33,7 @@ const scrollActive=()=>{
         if(top>=offset &&top<offset+height){
             linkNav.forEach(links=>{
                 links.classList.remove("active")
-                document.querySelector(`.navigation a[href=${id}`).classList.add("active")
+                document.querySelector(`.navigation a[href=${id}]`).classList.add("active")
             })
         }
     })
@@ -76,3 +76,17 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+
+//   partie const typewriter
+
+const title=document.querySelector("h1");
+const typewriter=new Typewriter(title, {
+    loop:true,
+    delay:100
+})
+
+typewriter
+.typeString(`  <span class="text-span1" > L'Art du Confort:<br/></span> 
+          Canapés et Chaises d'exception`)
+.start();

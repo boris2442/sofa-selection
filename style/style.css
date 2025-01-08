@@ -141,6 +141,9 @@ color:var(--accent);
     font-size: clamp(30px, 5vw, 60px);
 }
 .home-content h1 span{
+
+}
+.text-span1{
     color:var(--accent);
 }
 .home-content p{
