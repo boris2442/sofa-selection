@@ -89,4 +89,7 @@ const typewriter=new Typewriter(title, {
 typewriter
 .typeString(`  <span class="text-span1" > L'Art du Confort:<br/></span> 
           Canapés et Chaises d'exception`)
+          .pauseFor(2000)
+          .deleteAll()
+          .pauseFor(2000)
 .start();
