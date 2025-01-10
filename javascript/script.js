@@ -96,6 +96,6 @@ typewriter
 .start();
 
 
-// window.onload = function() {
-//     document.querySelector('.loader').style.display = 'none';
-// };
+window.onload = function() {
+    document.querySelector('.loader').style.display = 'none';
+};
