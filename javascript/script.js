@@ -31,7 +31,7 @@ const scrollActive=()=>{
         let offset=section.offsetTop-150;
         let height=section.offsetHeight;
         let id=section.getAttribute("id");
-        if(top>=offset &&top<offset+height){
+        if(top>=offset && top<offset+height){
             linkNav.forEach(links=>{
                 links.classList.remove("active")
                 document.querySelector(`.navigation a[href=${id}]`).classList.add("active")
