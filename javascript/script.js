@@ -1,6 +1,7 @@
 const header=document.querySelector("nav");
 const btnBurger=document.getElementById("burger-menu");
 const  nav =document.querySelector(".navigation");
+// const navLink=document.querySelector("nav")
 const linkNav=document.querySelectorAll(".navigation a");
 const sections=document.querySelectorAll("section");
 btnBurger.addEventListener("click",()=>{
@@ -93,3 +94,5 @@ typewriter
           .deleteAll()
           .pauseFor(2000)
 .start();
+
+
