@@ -1,3 +1,12 @@
+ .dark-body{
+    background-image: linear-gradient(135deg, rgba(33, 37, 41, 1), rgba(18, 18, 18, 1));
+    color:#fff;
+    transition: 2s ease-in-out;
+ }
+ .dark-body .section-heading span{
+    color:var(--accent);
+ }
+ 
  .mode{
     display: flex;
     flex-direction: column;
@@ -7,11 +16,24 @@
  .mode h3{
     border: 1px dashed #333;
     padding: 5px;
-    width: 200px;
+    width: 130px;
     text-align: center;
+ }
+ .dark-body .mode h3{
+    color:#333;
  }
  .dark{
     font-size: 2.2rem;
+    cursor: pointer;
     color:rgb(255, 221, 0);
 
 }
+.dark-body .text-footer-box{
+    color:#a21d1d;
+}
+.dark-body nav{
+
+   z-index: 10;
+}
+
+

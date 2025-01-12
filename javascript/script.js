@@ -105,7 +105,7 @@ window.onload = function() {
 // type writer dark mode
 
 const darkTitle=document.querySelector(".darkModeName");
-const typewriter2=new Typewriter(darkTitle, {
+const typewriter2 = new Typewriter(darkTitle, {
 delay:100,
 loop:true    
 })
@@ -116,5 +116,14 @@ typewriter2
 .deleteAll()
 .pauseFor(2000)
 .start()
+
+
+// partie dark
+const dark=document.querySelector(".dark")
+const bodyBalise=document.querySelector("body")
+dark.addEventListener("click", ()=>{
+    // document.body.classList.toogle("dark-body")
+    bodyBalise.classList.toggle("dark-body")
+})
 
 
