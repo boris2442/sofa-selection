@@ -39,4 +39,9 @@
     color: white;
 
 }
-
+.dark-body .footer-section h6{
+    color:#333;
+}
+.dark-body .copy{
+    padding: 30px;
+}
