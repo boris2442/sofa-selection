@@ -100,3 +100,21 @@ window.onload = function() {
     document.querySelector('.loader').style.display = 'none';
     document.querySelector('.loader').style.transition='5s ease-out'
 };
+
+
+// type writer dark mode
+
+const darkTitle=document.querySelector(".darkModeName");
+const typewriter2=new Typewriter(darkTitle, {
+delay:100,
+loop:true    
+})
+
+typewriter2
+.typeString('darkmode')
+.pauseFor(2000)
+.deleteAll()
+.pauseFor(2000)
+.start()
+
+
