@@ -1,7 +1,7 @@
  .dark-body{
     background-image: linear-gradient(135deg, rgba(33, 37, 41, 1), rgba(18, 18, 18, 1));
     color:#fff;
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
  }
  .dark-body .section-heading span{
     color:var(--accent);
