@@ -68,15 +68,16 @@ img{
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 3em;
-    color:rgba(0,0,0, 0.4)
+    color:rgba(0,0,0, 0.4);
 }
 
 /* partie destinee au header */
 
 nav{
+   
     position: fixed;
     top: 0;
-    
+   
     width: 100%;
     background-color: var(--bg);
     padding: 0.5rem 100px;
