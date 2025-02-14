@@ -455,7 +455,7 @@ margin-bottom: 1rem;
    .navigation{
     flex-direction: column;
     top: 100%;
-    right: -100%;
+    /* right: -100%; */
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     width: 280px;
     min-height: 100vh;
